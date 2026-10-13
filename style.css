@@ -1,0 +1,94 @@
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Main calculator */
+.calculator {
+    width: 400px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Calculator screen */
+.display {
+    height: 81px;
+    background-color: #333333;
+    border-radius: 10px;
+    margin-top: 98px;
+    margin-bottom: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+    font-size: 36px;
+}
+
+/* Buttons layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+}
+
+/* All buttons */
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    font-size: 23px;
+    cursor: pointer;
+    background-color: #505050;
+    color: white;
+}
+
+/* Number buttons */
+.number {
+    background-color: #505050;
+}
+
+/* Clear button */
+.clear {
+    background-color: #aaaaaa;
+    color: black;
+}
+
+/* Operation buttons */
+.operator {
+    background-color: #ff9900;
+    color: white;
+}
+
+/* Make zero button wider */
+.zero {
+    grid-column: span 2;
+    width: 150px;
+    border-radius: 35px;
+}
+
+/* Position decimal button */
+.decimal {
+    grid-column: 3;
+}
+
+/* Button hover effect */
+button:hover {
+    opacity: 0.8;
+}
